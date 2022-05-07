@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        #mO{
+            width: 120px;
+            height: 20px;
+            padding: 40px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- metodo onClick -->
+    <button onclick="insertarFecha()">Fecha y Hora</button>
+    <p id="demo"></p>
+    <!-- metodo onChange -->
+    <input type="text" id="original" onchange="duplicar()">
+    <input type="text" id="copia">
+    <br>
+    <!-- metodo on key down -->
+    <input type="text" id="originalA" onkeydown="duplicarA()">
+    <input type="text" id="copiaA">
+    <br>
+    <!-- metodo on key up -->
+    <input type="text" id="originalB" onkeyup="duplicarB()">
+    <input type="text" id="copiaB">
+    <br>
+    <!-- metodo on mouse over y mouse out -->
+    <div id="mO" onmouseover="mOver(this)" onmouseout="mOut(this)">
+        DOM
+    </div>
+    <br>
+    <!-- metodo on mouse down y mouse up -->
+    <div id="mO" onmousedown="mOver(this)" onmouseup="mOut(this)">
+        DOM
+    </div>
+    <script>
+
+        function insertarFecha(){
+            document.getElementById('demo').innerHTML=Date();
+        }
+
+        function duplicar(){
+            let original = document.getElementById('original').value;
+            document.getElementById('copia').value = original;
+        }
+
+        function duplicarA(){
+            let original = document.getElementById('originalA').value;
+            document.getElementById('copiaA').value = original;
+        }
+
+        function duplicarB(){
+            let original = document.getElementById('originalB').value;
+            document.getElementById('copiaB').value = original;
+        }
+
+        function mOver(obj){
+            obj.innerHTML = 'Slayer'
+        }
+
+        function mOut(obj){
+            obj.innerHTML = 'Doom'
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+     
+        // variables de tipo string
+          
+        var textoA = "Comillas dobles";
+        var textoB = 'Comillas simples';
+        var textoC = "Comillas 'simples' dentro de comillas dobles";
+        var textoD = 'Comillas "dobles" dentro de comillas simples';
+
+        console.log(textoA);
+        console.log(textoB);
+        console.log(textoC);
+        console.log(textoD);
+
+        // Operaciones aritmetica
+        var x = "5";
+        var y = "3.2";
+
+        document.write(x + y + " " + typeof(x+y));
+        
+        document.write(x * y + " " + typeof(x*y));
+
+        
+        // variables de tipo number
+
+        var numA, numB;
+        numA = 10
+        numB = 3.7
+        
+        console.log(numA + numB);
+        console.log(numA - numB);
+        console.log(numA * numB);
+        console.log(numA / numB);
+        console.log(numA % numB);
+
+        console.log(numA++); 
+        console.log(numA);
+
+        console.log(++numB);
+        console.log(numB);
+
+        //Variables de tipo boolean
+
+        var verdad = true;
+        var falso = false;
+
+        //Tabla de verdad AND
+        console.log(verdad && verdad); //true
+        console.log(verdad && falso); //false
+        console.log(falso && verdad); //false
+        console.log(falso && falso); //false
+
+        //Tabla de verdad OR
+        console.log(verdad || verdad); //true
+        console.log(verdad || falso); //true
+        console.log(falso || verdad); //true
+        console.log(falso || falso); //falso
+
+        //condiciones de igualdad y negacion
+        console.log(verdad == falso);//false
+        console.log(verdad != falso);//true
+        //Forma estricta
+        console.log(verdad === falso); //false
+        console.log(verdad !== falso);//true
+        </script>
+</body>
+</html>

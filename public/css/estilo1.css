@@ -1,0 +1,10 @@
+body{
+    background-color: lightblue;
+}
+p{
+    /* CON PREFIJO -moz- solo se ve en firefox */
+    background-image: -moz-linear-gradient(top, #F4FA58, #FF0000);
+    
+    /* Sin prefijo el estilo se ve en todos los navegadores */
+    background-color: #F4FA58;
+}

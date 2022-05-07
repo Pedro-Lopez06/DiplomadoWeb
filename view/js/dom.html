@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <input id="edad" type="text">
+
+    <p>Parrafo</p>
+    <h3 name="nombre">Walter</h3>
+    <h1 class="clase">Hola</h1>
+    <h1 class="clase">Mundo</h1>
+
+
+
+    <script>
+        // obtener elementos del DOM por tag o etiqueta
+        var parrafos = document.getElementsByTagName('p');
+        console.log(parrafos[0].innerHTML)
+        
+        // obtener elementos del DOM por name 
+        var nombres = document.getElementsByName('nombre');
+        console.log(nombres[0].innerHTML)
+        
+        // obtener elementos del DOM por clase
+        var clases = document.getElementsByClassName('clase');
+        console.log(clases[0].innerHTML)
+        console.log(clases[1].innerHTML)
+        
+        // obtener elementos del DOM por ID
+        var inputEdad = document.getElementById('edad');
+        console.log(inputEdad)
+    </script>
+</body>
+</html>

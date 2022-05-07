@@ -1,0 +1,29 @@
+/* Link no visitado */
+a:link{
+    color: red;
+}
+/* Link visitado */
+a:visited{
+    color: green;
+}
+/* Mause sobre link */
+a:hover{
+    color: hotpink;
+}
+/* Link seleccionado */
+a:active{
+    color: blue;
+}
+/* ****************** Estilo para pseudo elemento ******************** */
+p::first-letter{
+    color: red;
+    font-size: xx-large;
+}
+p::first-line{
+    color: blue;
+    font-variant: small-caps;
+}
+/* ****************** Estilo para atributos ******************** */
+a[target=_blank]{
+    background-color: yellow;
+}

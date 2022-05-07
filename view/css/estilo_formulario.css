@@ -1,0 +1,57 @@
+body{
+    
+    font-size: large;
+    font-family: 'Segoe UI';
+    margin-left: 25px;
+
+}
+.a{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+.email_pass{
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+
+}
+.email_pass label{
+    margin: 5px 10px 5px 0;
+    
+}
+.email_pass input{
+    width: 500px;
+    margin-right: 45px;
+    margin: 5px 10px 5px 0;
+    padding: 7px;
+}
+.address{
+    justify-content: space-between;
+    max-width: 1200px;
+    
+}
+.ads input{
+    margin-right: 45px;
+    width: 98%;
+    padding: 7px;
+}
+.b{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+    width: 100%;
+}
+.b label{
+    margin: 5px 10px 5px 0;
+}
+#inp {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
